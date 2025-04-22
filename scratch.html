@@ -1,0 +1,103 @@
+<!-- scratch.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uruguay | Scratch Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #fefefe; color: #333; font-family: Arial, sans-serif;">
+
+  <nav style="background-color: #ffffff; border-bottom: 1px solid #ccc; padding: 10px;">
+    <a href="index.html">← Back to Home</a> |
+    <a href="#tableau">Jump to Tableau Graph</a> |
+    <a href="webapp.html">Try My Web App</a>
+  </nav>
+
+  <header class="custom-section">
+    <h1>Welcome to My Scratch Page: <span class="highlight">Uruguay</span></h1>
+    <p>This page demonstrates custom HTML and CSS. Learn about Uruguay, see an inspiring video, explore data in a Tableau graph, and more.</p>
+  </header>
+
+  <!-- Ordered list with embedded unordered list -->
+  <section class="custom-section">
+    <h2>5 Cool Facts About Uruguay</h2>
+    <ol>
+      <li>The capital city is Montevideo.</li>
+      <li>Uruguay was the first country to legalize marijuana.
+        <ul>
+          <li>Government-regulated sales</li>
+          <li>Private home cultivation</li>
+        </ul>
+      </li>
+      <li>It has more cows than people!</li>
+      <li>The national dish is called "Chivito" (steak sandwich).</li>
+      <li>Uruguay has the longest national anthem in the world.</li>
+    </ol>
+  </section>
+
+  <!-- Three divs -->
+  <section class="custom-section">
+    <div class="div1" style="background-color: #f2f2f2;">
+      <h3>Language</h3>
+      <p>The official language is Spanish, but you'll also hear Portuñol near the Brazil border.</p>
+    </div>
+
+    <div class="div2" style="background-color: #e8f5e9;">
+      <h3>Flag</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg" alt="Uruguay Flag" width="200">
+    </div>
+
+    <div class="div3" style="background-color: #e3f2fd;">
+      <h3>Music</h3>
+      <p>Candombe is a traditional style of music and dance with African roots, unique to Uruguay.</p>
+    </div>
+  </section>
+
+  <!-- Embedded YouTube Video -->
+  <section class="custom-section">
+    <h2>Video: Forgiveness in Uruguay</h2>
+    <iframe width="914" height="514" src="https://www.youtube.com/embed/WTi4tq6GuvU" title="Forgiveness: My Burden Was Made Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <!-- Embedded Tableau -->
+  <section class="custom-section" id="tableau">
+    <h2>Interactive Data: Work and Salary</h2>
+    <div class='tableauPlaceholder' id='viz1745343364469' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt='SALARY' src='https://public.tableau.com/static/images/SA/SALARYWORKHOURS/SALARY/1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='SALARYWORKHOURS/SALARY' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/SA/SALARYWORKHOURS/SALARY/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1745343364469');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '922px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <footer style="text-align: center; padding: 1rem; background-color: #fff; border-top: 1px solid #ccc;">
+    <p>&copy; 2025 Sadie Bailey</p>
+  </footer>
+
+</body>
+</html>
